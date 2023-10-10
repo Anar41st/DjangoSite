@@ -70,4 +70,4 @@ def ErrBadRequest(request, exception):
 def err400(request):
     raise BadRequest
 def err500(request):
-    raise brbrbr
+    raise brbrbrbr
