@@ -5,8 +5,12 @@ from django.core.exceptions import PermissionDenied, BadRequest
 def index(request):
     data = {
         'title': 'Главная страница',
+        'list': ['god','shlepa','palm'],
+        'slovar':{"key1":'maingod', 'key2':'dishes'},
+        'numb':500,
+        'float':500.1,
           }
-    return render(request, 'main/index.html')
+    return render(request, 'mainIndex/index.html',data)
 def StudentList(request,studentID):
     StudentsDict = {1: '1) Буренок Дмитрий ',
                     2: '2) Горбанёв Кирилл ',
@@ -24,7 +28,7 @@ def StudentList(request,studentID):
     if 1 <= studentID <= 13:
         return HttpResponse(f"<h2>Студент</h2> <p>{StudentsDict[studentID]}</p>")
     else:
-        return redirect('student', '2')
+        return redirect('Students', '2')
 
 def year(reguest, year_id):
     events = {2000: '<li> 2000</li>',
@@ -55,8 +59,7 @@ def year(reguest, year_id):
     if 2000 <= int(year_id) <= 2023:
         return HttpResponse(f"<h1>Основные события {year_id} года</h1> <ul>{events[int(year_id)]}</ul>")
     else:
-        return redirect('yearsHomepage')
-        #return HttpResponse(f"<h1>{year_id} год отсутствует в списке</h1>")
+        return redirect('yearsHomepage', permanent=True)
 
 def years_mainpage(request):
     if(request.GET):
