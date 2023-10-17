@@ -12,5 +12,13 @@
             <p>{{float}}</p>
             <p>{{slovar}}</p>
         </ul>
+    <ul>
+        {%for st in studenti %}
+        <li> <h2>{{st.FIO}}</h2>
+            <p>{{st.interes}}</p>
+            <hr>
+        </li>
+        {% endfor %}
+    </ul>
     </body>
 </html>

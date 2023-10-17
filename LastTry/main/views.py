@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseNotFound, Http404, HttpResponseForbidden, HttpResponseServerError, HttpResponseBadRequest
 from django.core.exceptions import PermissionDenied, BadRequest
 
+data_db=[
+    {'id':1,'FIO':'Борисыч','interes':'risovanie , football','is_smoke':False},
+    {'id':2,'FIO':'ktru','interes':'grid , fooll','is_smoke':False}
+]
 def index(request):
     data = {
         'title': 'Главная страница',
@@ -9,6 +13,7 @@ def index(request):
         'slovar':{"key1":'maingod', 'key2':'dishes'},
         'numb':500,
         'float':500.1,
+        'studenti': data_db,
           }
     return render(request, 'mainIndex/index.html',data)
 def StudentList(request,studentID):
