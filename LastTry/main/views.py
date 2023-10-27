@@ -6,6 +6,20 @@ data_db=[
     {'id':1,'FIO':'Борисыч','interes':'risovanie , football','is_smoke':False},
     {'id':2,'FIO':'ktru','interes':'grid , fooll','is_smoke':False}
 ]
+menu=[
+    {'title':'Главная', 'url_n':'homepage'},
+    {'title':'Года', 'url_n':'yearsHomepage'},
+    {'title':'about', 'url_n':'about'},
+       ]
+data = {
+        'title': 'Главная страница',
+        'list': ['god','shlepa','palm'],
+        'slovar':{"key1":'maingod', 'key2':'dishes'},
+        'numb':500,
+        'float':500.1,
+        'studenti': data_db,
+        'menu':menu,
+          }
 def index(request):
     data = {
         'title': 'Главная страница',
@@ -14,6 +28,7 @@ def index(request):
         'numb':500,
         'float':500.1,
         'studenti': data_db,
+        'menu':menu,
           }
     return render(request, 'mainIndex/index.html',data)
 def StudentList(request,studentID):
@@ -89,3 +104,6 @@ def err400(request):
     raise BadRequest
 def err500(request):
     raise brbrbrbr
+def about(request):
+
+    return render(request, 'mainIndex/about.html',data)

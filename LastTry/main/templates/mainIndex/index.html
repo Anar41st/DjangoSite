@@ -16,9 +16,19 @@
         {%for st in studenti %}
         <li> <h2>{{st.FIO}}</h2>
             <p>{{st.interes}}</p>
+            {% if not forloop.last %}
             <hr>
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
+    <ul>
+        {% for m in menu %}
+        <li>
+            <a href="{% url m.url_n %}">{{m.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
     </body>
 </html>

@@ -6,6 +6,7 @@ from . import views
 register_converter(FourDigitYearConverter, "yyyy")
 urlpatterns = [
     path('', views.index, name='homepage'),
+    path('about', views.about,name='about'),
     path('Student/<int:studentID>/', views.StudentList, name='Students'),
     path('year/', views.years_mainpage, name='yearsHomepage'),
     path('year/<yyyy:year_id>/', views.year, name='year'),
