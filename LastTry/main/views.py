@@ -12,7 +12,7 @@ menu=[
     {'title':'about', 'url_n':'about'},
        ]
 data = {
-        'title': 'Главная страница',
+        'title': '',
         'list': ['god','shlepa','palm'],
         'slovar':{"key1":'maingod', 'key2':'dishes'},
         'numb':500,
@@ -105,5 +105,8 @@ def err400(request):
 def err500(request):
     raise brbrbrbr
 def about(request):
-
+    data={
+        'title':'О нас',
+        'menu':menu,
+    }
     return render(request, 'mainIndex/about.html',data)

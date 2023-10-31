@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
-</head>
-    <body>
-        <h1>{{title}}</h1>
+{% extends 'base.html' %}
+{% block content %}
         <ul>
             <li>{{list}}</li>
             <p>{{numb}}</p>
@@ -22,13 +16,8 @@
         </li>
         {% endfor %}
     </ul>
-    <ul>
-        {% for m in menu %}
-        <li>
-            <a href="{% url m.url_n %}">{{m.title}}</a>
-        </li>
-        {% endfor %}
-    </ul>
 
-    </body>
-</html>
+{% include 'navigation.html' %}
+
+
+{% endblock content %}
