@@ -15,4 +15,7 @@ class Books(models.Model):
     genre=models.TextField(blank=True)
     time_create= models.DateTimeField(auto_now_add=True)
     time_update=models.DateTimeField(auto_now=True)
-    price=models.IntegerField(blank=True)
+    price=models.IntegerField()
+
+def __str__(self):
+    return self.name

@@ -12,28 +12,29 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65">
-      <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[drop table main_books]]></console>
+    <connection id="2ded2b48-9968-46cc-abbe-2302f84aa3f3">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" object-ref="schemas/main/tables/main_books" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" dataset="main.django_migrations" active-filter-id="" />
-    <filter-actions connection-id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" dataset="main.sqlite_sequence" active-filter-id="" />
-    <filter-actions connection-id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" dataset="main.auth_group_permissions" active-filter-id="" />
-    <filter-actions connection-id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" dataset="main.main_books" active-filter-id="" />
-    <filter-actions connection-id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" dataset="main.django_session" active-filter-id="" />
-    <filter-actions connection-id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" dataset="main.django_admin_log" active-filter-id="" />
+    <filter-actions connection-id="2ded2b48-9968-46cc-abbe-2302f84aa3f3" dataset="main.main_books" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -41,7 +42,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="90301fa1-f8b9-4e1f-b9ad-c2be2f932a65" active="true" signed="true">
+      <connection id="2ded2b48-9968-46cc-abbe-2302f84aa3f3" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -58,7 +59,7 @@
           <tns-folder value="" />
           <tns-profile value="" />
           <files>
-            <file path="C:\Users\gange\PycharmProjects\DjangoSite\LastTry\db.sqlite3" schema="main" />
+            <file path="D:\DjangoSite\LastTry\db.sqlite3" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
